@@ -11,7 +11,7 @@ class ChangePass:
         # Locators
         self.currentPassword_id = 'ge.space.app:id/confirmPasswordFragmentPin'
         self.newPassCode_id = 'ge.space.app:id/passwordBaseFragmentPin'
-        self.closeButton_id = 'ge.space.app:id/buttonLabel'
+        self.closeButton_id = 'ge.space.app:id/cardListButtonLabel'
         self.closeIcon_id = 'ge.space.app:id/homeProfileBtn'
 
         # Methods

@@ -30,11 +30,11 @@ class LoginTest(unittest.TestCase):
         login.clickOnStart()
 
 # fill mobile number
-        login.fillMobileNumber(os.environ.get("mobile_number"))
+        login.fillMobileNumber(os.environ.get("MOBILE_NUMBER"))
         driver.implicitly_wait(10)
 
 # fill passcode
-        login.fillPasscode(os.environ.get("currentPassCode"))
+        login.fillPasscode(os.environ.get("CURRENTPASSCODE"))
         driver.implicitly_wait(15)
 
 # click "later" on biometric popup
@@ -57,11 +57,11 @@ class LoginTest(unittest.TestCase):
         parameters.clickOnchangePassword()
 
 # fill current password
-        changePass.fillCurrentPassCode(os.environ.get("currentPassCode"))
+        changePass.fillCurrentPassCode(os.environ.get("CURRENTPASSCODE"))
         driver.implicitly_wait(5)
 
 # fill new password
-        changePass.fillNewPassCode(os.environ.get("newPassCode"))
+        changePass.fillNewPassCode(os.environ.get("NEWPASSCODE"))
         driver.implicitly_wait(5)
 
 # fill new password again
